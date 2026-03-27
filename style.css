@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.tagline {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary div {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.summary div:nth-child(1) { color: #22c55e; }
+.summary div:nth-child(2) { color: #ef4444; }
+.summary div:nth-child(3) { color: #38bdf8; }
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+button {
+  grid-column: span 2;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chart-box {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  background: #1e293b;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border-left: 5px solid;
+}
+
+.transaction.income { border-color: #22c55e; }
+.transaction.expense { border-color: #ef4444; }
+
+.transaction button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.transaction button:first-child {
+  background: #38bdf8;
+}
+
+.transaction button:last-child {
+  background: red;
+  color: white;
+}
+
+#empty {
+  text-align: center;
+  opacity: 0.7;
+}

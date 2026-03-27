@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Wealth & Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>💰 Personal Wealth & Expense Tracker</h2>
+  <p class="tagline">Track. Analyze. Improve.</p>
+
+  <div class="summary">
+    <div>Income <br><span id="income">₹0.00</span></div>
+    <div>Expense <br><span id="expense">₹0.00</span></div>
+    <div>Balance <br><span id="balance">₹0.00</span></div>
+  </div>
+
+  <form id="form">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+
+    <select id="category">
+      <option>Food</option>
+      <option>Rent</option>
+      <option>Salary</option>
+      <option>Travel</option>
+    </select>
+
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+
+    <button type="submit" id="submitBtn">Add</button>
+  </form>
+
+  <p id="empty">Get started by adding your first transaction 🚀</p>
+
+  <div class="chart-box">
+    <canvas id="chart"></canvas>
+  </div>
+
+  <h3>Transactions</h3>
+  <div id="list"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
